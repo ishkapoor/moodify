@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Song App</title>
+
+  <link rel="stylesheet" type="text/css" href="font-awesome.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">		
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+
+		<style>
+	a:hover{
+    color:green !important;
+}
+#spot{
+color:white;
+}
+.back-img{
+ background-image: url("music7.jpg");
+    background-repeat: no-repeat;
+	background-size:cover;
+	margin-top:0px;
+}
+span
+{
+display:inline!important;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+        text-decoration: none;
+        background-color: transparent !important;
+  }
+li
+{
+text-decoration:none!important;
+}
+.margin
+{
+margin-top:20px !important;
+}
+.panel-class{
+ background-image: url("rock.jpg");
+    background-repeat: no-repeat;
+	background-size:cover;
+	margin-top:0px;
+}
+
+	</style>
+</head>
+
+<body>
+    <div class="wrapper" >
+	<header style="padding:0px;height:25px;" class="" id="header-id">
+	<nav class="navbar navbar-inverse" style="height:70px;">
+  <div class="container-fluid">
+    <div class="navbar-header" >
+      <a class="navbar-brand" id="spot" href="#" class="active" style="margin-left:50px;color:white;margin-top:6px;"><i class="fa fa-spotify"style="font-size:30px;"></i><small style="margin-left:4px;font-size:20px;" >Songify</small></a>
+    </div>
+    <ul class="nav navbar-nav navbar-right"style="margin-top:15px;" >
+      <li ><a href="#" style="color:white;" class="link1">Premium</a></li>
+      <li ><a href="#" style="color:white;"class="link2">Help</a></li>
+      <li ><a href="#" style="color:white;"class="link3">Download</a></li>
+	   <li ><a href="#" style="color:white;"class="link4">Signup</a></li>
+	   <li ><a href="#" style="color:white;"class="link5 clickable">Login</a></li>
+    </ul>
+  </div>
+</nav>
+	</header>
+        <section class="welcome-screen back-img  " style="margin-top:45px;" >
+		 
+      <form ><!-- form for login page-->
+      <div class="login-form">
+     <div class="form-group ">
+      <span>  	
+	   <p style="font-size:40px;color:white;margin-left:400px;">Signup For exotic Music</p>
+	  <input type="text"  placeholder="test@acadview.com" id="userName"style="width:250px;margin-top:100px;margin-left:400px;padding:8px;border-radius:0px">
+	   <button class="btn btn-primary btn-lg" id="click-button" href="#" role="button" style="background-color:#90EE90;border:0px;border-radius:20px;width:200px;margin-top:0px;margin-left:10px;height:45px;">Signup</button>
+	   </span>
+     </div>
+   </form><!-- end of form-->
+        </section><!-- section for images above footer-->
+		   <section class=" img-section "style="height:420px;margin-top:0px;color:white;" >
+     <div class="container-fluid " id="wrapper"style="width:100%;height:100%;padding-right:-0px;"> 
+	 	<p style="margin-top:40px;color:black;margin-left:30%;font-size:40px;font-family:bold;">instant access to million of songs
+	 </p>  
+	 <div class="row" style="width:100%;height:100%;margin:0px;">
+	
+	 <div class="col-md-3 col-sm-3 col-xs-3" >
+	 <a href="#"><div class="panel panel-default image1">
+			  </div></a>
+			  <p style="color:black;margin-left:40px;font-family:arial;font-size:17px">Section listeneverywhere title</p>
+	 </div>
+	 <div class="col-md-3 col-sm-3 col-xs-3" >
+	 <a href="#"><div class="panel panel-default image2">     
+	 </div></a>
+	   <p style="color:black;margin-left:60px;">Unlimited ad free music</p>
+	 </div>
+	 <div class="col-md-3 col-sm-3 col-xs-3" >
+	 <a href="#"><div class="panel panel-default image3">        
+			  </div></a>
+			    <p  style="color:black;margin-left:60px;">Download music and listen</p>
+	 </div>
+	 <div class="col-md-3 col-sm-3 col-xs-3" >
+	 <a href="#"><div class="panel panel-default image4">
+			  </div></a>
+			    <p style="color:black;margin-left:60px;">Premium sounds better</p>
+	 </div>
+	 </div>
+	 </div>
+        </section><!-- end of section containing images-->
+		
+		<div class="container-fluid panel-class hidden" id="wrapper1"style="background-color:	#F0FFFF;width:100%;height:560px;margin-top:45px;margin-bottom:0px;"><!-- div containing panels pf different moods-->
+	         <div class="row" style="width:100%;height:95%;margin-left:10px;">
+	         <div class="col-md-3 col-xs-3 col-sm-3" style="height:100%;margin-top:10px;">
+			 <div class="panel panel-default sentimental clickable img1" id="sentimental"style="height:30%;width:95%;background-color:#333333;">
+             <div class="panel-body"><i class="material-icons" aria-hidden="true" style="color:white;font-size:100px;margin-top:15px;margin-left:60px;">sentiment_neutral
+			 </i>
+			  <div style="margin-left:70px;color:white;margin-top:-7px;">Sentimental</div>
+			  </div>
+              </div>
+			  <div class="panel panel-default clickable happy img2"style="height:30%;width:95%;background-color:#333333;">
+              <div class="panel-body"><i class="fa fa-smile-o" aria-hidden="true" style="color:white;font-size:100px;margin-top:15px;margin-left:70px;"></i>
+			  <div style="margin-left:90px;color:white;">Happy</div>
+			  </div>
+             </div>
+			 <div class="panel panel-default clickable romance img3"style="height:30%;width:95%;background-color:#333333;">
+              <div class="panel-body"><i class="fa fa-heart" aria-hidden="true"  style="color:white;font-size:100px;margin-top:20px;margin-left:60px;"></i>
+			  </div>
+			  <div style="margin-left:94px;color:white;margin-top:-14px;">Romance</div>
+             </div>
+			 </div>
+			  <div class="col-md-3 col-sm-3 col-xs-3 " style="height:100%;margin-top:10px;">
+			  <div class="panel panel-default clickable sad img4 "style="height:30%;width:95%;background-color:#333333">
+              <div class="panel-body">
+			  <i class="fa fa-frown-o" aria-hidden="true" style="color:white;font-size:100px;margin-top:15px;margin-left:79px;"></i>
+			  <div style="margin-left:107px;color:white;">Sad</div>
+			  </div>
+             </div>
+			 <div class="panel panel-default clickable dissatisfied img5"style="height:30%;width:95%;background-color:#333333;">
+              <div class="panel-body">
+			  <i class="material-icons" aria-hidden="true" style="color:white;font-size:100px;margin-top:15px;margin-left:70px;border:0px;">sentiment_dissatisfied</i>
+			  <div style="margin-left:80px;color:white;margin-top:-3px;">Dissatisfied</div>
+			  </div>
+             </div>
+			 <div class="panel panel-default clickable satisfied img6"style="height:30%;width:95%;background-color:#333333;">
+              <div class="panel-body"><i class="material-icons" aria-hidden="true" style="color:white;font-size:100px;margin-top:15px;margin-left:70px;border:0px;">sentiment_very_satisfied</i>
+			  <div style="margin-left:90px;color:white;margin-top:-3px;">satisfied</div>
+			  </div>
+             </div>
+			 </div>
+			  <div class ="col-md-3 col-sm-3 col-xs-3 "style="height:100%;margin-top:10px;"> 
+			  <div class="panel panel-default clickable retro img7"style="height:30%;width:95%;background-color:#333333;">
+               <div class="panel-body"><i class="material-icons" aria-hidden="true" style="color:white;font-size:100px;margin-top:10px;margin-left:70px;border:0px;">radio</i>
+			  <div style="margin-left:100px;color:white;margin-top:-3px;">Retro</div>
+			   </div>
+              </div>
+			  <div class="panel panel-default clickable party img8"style="height:30%;width:95%;background-color:#333333;">
+              <div class="panel-body">
+			  <i class="material-icons" aria-hidden="true" style="color:white;font-size:100px;margin-top:19px;margin-left:70px;border:0px;">party_mode</i>
+			  <div style="margin-left:100px;color:white;margin-top:-10px;">Party</div>
+			  </div>
+             </div>
+			 <div class="panel panel-default clickable opti img9"style="height:30%;width:95%;background-color:#333333;">
+              <div class="panel-body"><i class="material-icons" aria-hidden="true" style="color:white;font-size:100px;margin-top:10px;margin-left:70px;border:0px;">face</i>
+			  <div style="margin-left:85px;color:white;margin-top:-3px;">Optimistic</div>
+			  </div>
+             </div>
+			 </div>
+			  <div class="col-md-3 col-sm-3 col-xs-3"style="height:100%;margin-top:10px;" >
+			  <div class="panel panel-default clickable beach img10"style="height:30%;width:95%;background-color:#333333;">
+              <div class="panel-body">
+			  <i class="material-icons" aria-hidden="true" style="color:white;font-size:100px;margin-top:10px;margin-left:70px;border:0px;">beach_access</i>
+			  <div style="margin-left:110px;color:white;margin-top:-3px;">Beach</div>
+			  </div>
+             </div>
+			 <div class="panel panel-default clickable child img11"style="height:30%;width:95%;background-color:#333333">
+              <div class="panel-body">  <i class="material-icons" aria-hidden="true" style="color:white;font-size:100px;margin-top:10px;margin-left:70px;border:0px;">child_friendly</i>
+			  <div style="margin-left:85px;color:white;margin-top:-3px;">child friendly</div>
+			  </div>
+             </div>
+			 <div class="panel panel-default clickable gym img12"style="height:30%;width:95%;background-color:#333333">
+              <div class="panel-body"><i class="material-icons" aria-hidden="true" style="color:white;font-size:100px;margin-top:10px;margin-left:70px;border:0px;">fitness_center</i>
+			  <div style="margin-left:115px;color:white;margin-top:-3px;">Gyming</div>
+			  </div>
+             </div>
+			 </div>	 
+	 </div>
+	 </div><!-- div of panels ended-->
+        <div class="main hidden" id="main-id" style="backgroud-repeat:none;background-size:cover;background-color:#F6EAEA;"><!--main class containing songs-->
+            <section class="content" style="width:90%;">
+                <audio  id="audio-source"src="" ></audio>
+        <table id="songs" style="width:100%;color:none;background-color:none;">
+    <thead class="list-headers">
+            <tr><td> Title </td>
+            <td> Artist </td>
+            <td> Album </td>
+            <td class="margin1"> Duration </td>
+        </tr></thead>
+        <!-- <div class="song-list"> -->
+            <tbody style="background-color:none;color:none;">
+			    <tr class="song" id="song1">
+                <td class="song-name"style="background-color:#F6EAEA;"></td>
+                <td class="song-artist"style="background-color:#F6EAEA;"></td>
+                <td class="song-album"style="background-color:#F6EAEA;"></td>
+                <td style="background-color:#F6EAEA;" class="song-length"></td>
+            </tr>
+            <tr class="song" id="song2">
+                <td class="song-name"style="background-color:#F6EAEA;"></td>
+                <td class="song-artist"style="background-color:#F6EAEA;"></td>
+                <td class="song-album"style="background-color:#F6EAEA;"></td>
+                <td class="song-length"style="background-color:#F6EAEA;"></td>
+            </tr>
+            <tr class="song" id="song3">
+                <td class="song-name"style="background-color:#F6EAEA;"></td>
+                <td class="song-artist"style="background-color:#F6EAEA;"></td>
+                <td class="song-album"style="background-color:#F6EAEA;"></td>
+                <td class="song-length"style="background-color:#F6EAEA;"></td>
+            </tr>
+            <tr class="song" id="song4">
+                <td class="song-name"style="background-color:#F6EAEA;"></td>
+                <td class="song-artist"style="background-color:#F6EAEA;"></td>
+                <td class="song-album"style="background-color:#F6EAEA;"></td>
+                <td class="song-length"style="background-color:#F6EAEA;margin-left:30px;"></td>
+            </tr>
+        <!-- </div> -->
+    </tbody></table>
+     
+		 <footer style="margin-top:224px;margin-left:0px;margin-bottom:0px;width:90%;height:84px;position:fixed;">
+                <div class="controls" >    
+               <div class="player-buttons">
+			   <div class="current-song-wrapper"style="margin-left:0;padding:0px;margin-top:0px;height:10px;width:10px;">
+             <img class="current-song-image"style="border-radius:0px;height:70px;width:80px;margin-left:-380px;margin-top:-17px;">
+			    <p class="current-song-name" style="margin-left:-300px;font-size:15px;margin-top:-60px;color:white;"></p>
+        <p class="current-song-album"style="margin-left:-300px;font-size:15px;color:white;"></p>
+        <div>
+        </div>
+        </div>
+               <i class="fa fa-random clickable disabled" aria-hidden="true"style="color:light-black;"></i>
+               <i class="fa fa-step-backward clickable" aria-hidden="true"style="color:black;"></i>
+               <i class="fa fa-play clickable play-icon" aria-hidden="true"style="color:black;"></i>
+               <i class="fa fa-step-forward clickable" aria-hidden="true"style="color:black;"></i>
+               <i class="fa fa-repeat disabled clickable" aria-hidden="true"style="color:light-black;"></i>
+			   <i class="fa fa-volume-up clickable" id="mute"aria-hidden="true"style="color:black;"></i>
+			  <input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)" style="width:10%;color:black;"></input>
+                </div>
+                    <div class="progress-wrapper">
+                        <span class="time-elapsed"> </span>
+                        <div class="player-progress">
+                            <div class="progress-filled"> </div>
+                        </div>
+                        <span class="song-duration"></span>
+                    </div>
+                </div>
+            </footer>
+            </section>
+           
+        </div><!--main class end-->
+		<footer style="background-color:black;height:500px;" class="" id="footer-id"><!--footer of website-->
+	<div class="container-fluid " id="wrapper"style="width:100%;height:100%;">
+	         <div class="row" style="width:100%;height:80%;margin-left:10px;">
+			  <div class="col-md-3col-xs-3 col-sm-3  " style="height:80%;margin-top:60px;">
+			   <a class="navbar-brand" id="spot" href="#" class="active" style="margin-left:50px;color:white;margin-top:6px;"><i class="fa fa-spotify"style="font-size:30px;"></i><small style="margin-left:4px;font-size:20px;" >Songify</small></a>
+			  </div>
+			  <div class="col-md-2 col-xs-2 col-sm-2" style="height:80%;margin-top:60px;">
+			  <ul class="nav nav-pills nav stacked">
+			  <div><li role="presentation " class="margin">COMPANY</li></div>
+			  <div><li role="presentation " class="margin"><a href="# " style="color:white;">About Us</a></li></div>
+              <div><li role="presentation " class="margin"><a href="# "style="color:white;">Jobs</a></li></div>
+              <div><li role=" presentation " class="margin"><a href="# "style="color:white;">press</a></li></div>
+               <div><li role="presentation " class="margin"><a href="# "style="color:white;">News</a></li></div>
+              </ul>
+			  </div>
+			  <div class="col-md-2 col-xs-2 col-sm-2 " style="height:80%;margin-top:60px;">
+			   <ul class="nav nav-pills nav stacked">
+			  <div><li role="presentation " class="margin">COMMUNITIES</li></div>
+			  <div><li role="presentation "class="margin"><a href="# " style="color:white;">Artists</a></li></div>
+              <div><li role="presentation " class="margin"><a href="# "style="color:white;">Developers</a></li></div>
+              <div><li role=" presentation " class="margin"><a href="# "style="color:white;">Brands</a></li></div>
+			  </ul>
+			  </div>
+			  <div class="col-md-2 col-xs-2 col-sm-2" style="height:80%;margin-top:60px;">
+			  <ul class="nav nav-pills nav stacked">
+			  <div><li role="presentation " class="margin">USEFUL LINKS</li></div>
+			  <div><li role="presentation "class="margin"><a href="# " style="color:white;">Help</a></li></div>
+              <div><li role="presentation " class="margin"><a href="# "style="color:white;">Gift</a></li></div>
+              <div><li role=" presentation " class="margin"><a href="# "style="color:white;">Web Player</a></li></div>
+			  </ul>
+			  </div>
+			 <div class="col-md-3 col-xs-3 col-sm-3 " style="height:80%;margin-top:80px;">
+			 <a href="#"style="border-radius:20px;color:white;"class="differnce"><i class="fa fa-instagram"style="font-size:30px;"></i></a>
+			 <a href="#" style="border-radius:20px;color:white;"class="differnce"><i class="fa fa-twitter"style="font-size:30px;"></i></a>
+			 <a href="#" style="border-radius:20px;color:white;"class="differnce"><i class="fa fa-facebook"style="font-size:30px;"></i></a>
+			  </div>
+			  </div>
+			 
+	  <ul class="nav nav-pills pull-right ">
+      <li role="presentation "><a href="# " style="color:white;">Legal</a></li>
+      <li role="presentation "><a href="# "style="color:white;">Privacy</a></li>
+      <li role=" presentation "><a href="# "style="color:white;">Cookies</a></li>
+      <li role="presentation "><a href="# "style="color:white;">Ad Choices</a></li>
+    </ul>
+	 </div>
+	</footer><!-- end of footer-->
+    </div>
+    <script src="jquery.js">
+    </script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js">
+	</script>
+    <script src="main.js"></script>
+</body>
+</html>
