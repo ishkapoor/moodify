@@ -494,7 +494,8 @@ $('.song-duration').text(duration);
 var id;
 
 	function startSentiment() {          //fn to start sentimental songs 
-		 name1='sentiment';
+	name1='sentiment';
+	startTable();
         for(var i =0; i < sentiment.length;i++) {
         var obj = sentiment[i];  
         var name = '#song' + (i+1);
@@ -509,10 +510,10 @@ var id;
 	    setInterval(function(){
 	    updateCurrentTime();}, 1000);
 	}
-	startTable();
 	}
 	function startparty() {              //fn to start party songs
 	name1='songs';
+	startTable();
     for(var i =0; i < songs.length;i++) {
         var obj = songs[i];	
         var name = '#song' + (i+1);
@@ -526,11 +527,11 @@ var id;
 		console.log(obj.fileName);
 	    setInterval(function(){
 	    updateCurrentTime();}, 1000);
-	}
-    startTable();	
+	}	
 	}
 	function startretro() {                         //fn to start retro songs
 	name1='retros';
+	startTable();
     for(var i =0; i < retros.length;i++) {
         var obj = retros[i];
         var name = '#song' + (i+1);
@@ -545,10 +546,10 @@ var id;
 	    setInterval(function(){
 	    updateCurrentTime();}, 1000);
 	}
-	startTable();
 	}
 	function startsad() {
-			 name1='sads';
+	name1='sads';
+	startTable();
     for(var i =0; i < sads.length;i++) {
         var obj = sads[i];
         var name = '#song' + (i+1);
@@ -563,10 +564,11 @@ var id;
 	    setInterval(function(){
 	    updateCurrentTime();}, 1000);
 	}
-	startTable();
+
 	}
 	function startchild() {
-		 name1='children';
+	name1='children';
+	startTable();
     for(var i =0; i < children.length;i++) {
         var obj = children[i];
         var name = '#song' + (i+1);
@@ -581,10 +583,10 @@ var id;
 	    setInterval(function(){
 	    updateCurrentTime();}, 1000);
 	} 
-	startTable();
 	}
 	function starthappy() {	 
 		 name1='happy';
+		startTable();
     for(var i =0; i < happy.length;i++) {
         var obj = happy[i];
         var name = '#song' + (i+1);
@@ -599,10 +601,10 @@ var id;
 	    setInterval(function(){
 	    updateCurrentTime();}, 1000);
 	}
-	startTable();
 	}
 	function startromance() {
-	name1='romance';	
+	name1='romance';
+		startTable();
     for(var i =0; i < romance.length;i++) {
         var obj = romance[i];
         var name = '#song' + (i+1);
@@ -617,10 +619,10 @@ var id;
 	    setInterval(function(){
 	    updateCurrentTime();}, 1000);
 	}
-	startTable();
 	}
 	function startgyms() {
 		name1='gymers';
+		startTable();
     for(var i =0; i < gymers.length;i++) {
         var obj = gymers[i];
         var name = '#song' + (i+1);
@@ -635,10 +637,10 @@ var id;
 	    setInterval(function(){
 	    updateCurrentTime();}, 1000);
 	}
-	startTable();
 	}
 	function startparty() {
 			name1='songs';
+		startTable();
     for(var i =0; i < songs.length;i++) {
         var obj = songs[i];
         var name = '#song' + (i+1);
@@ -653,10 +655,10 @@ var id;
 	    setInterval(function(){
 	    updateCurrentTime();}, 1000);
 	}
-	startTable();
 	}
 	function startsatisfied() {
-		 name1='satisfied';  
+		 name1='satisfied'; 
+		startTable();
     for(var i =0; i < satisfied.length;i++) {
         var obj = satisfied[i];
 		var name = '#song' + (i+1);
@@ -671,10 +673,10 @@ var id;
 	    setInterval(function(){
 	    updateCurrentTime();}, 1000);
 	}
-	startTable();
 	}
 	function startdissatisfied() {
 		name1='dissatisfied';
+		startTable();
     for(var i =0; i < dissatisfied.length;i++) {		 
      var obj = dissatisfied[i];
         var name = '#song' + (i+1);
@@ -689,10 +691,10 @@ var id;
 	    setInterval(function(){
 	    updateCurrentTime();}, 1000);
 	}
-    startTable();	
 	}
 	function startoptimistic() {
 	name1='optimistic';
+	startTable();
     for(var i =0; i < optimistic.length;i++) {
         var obj = optimistic[i];	 
         var name = '#song' + (i+1);
@@ -706,11 +708,11 @@ var id;
 		console.log(obj.fileName);
 	    setInterval(function(){
 	    updateCurrentTime();}, 1000);
-	}
-	startTable();
+    }	
 	}
 	function startbeach() {
 		name1='beach';
+		startTable();
     for(var i =0; i < beach.length;i++) {
         var obj = beach[i];			
         var name = '#song' + (i+1);
@@ -725,7 +727,6 @@ var id;
 	    setInterval(function(){
 	    updateCurrentTime();}, 1000);
 	}	
-	startTable();
 	}
 function addSongNameClickEvent(songObj,position) {
 var songName = songObj.fileName; // New Variable 
@@ -1102,19 +1103,19 @@ window.SetVolume = function(val) //fn to increase or decrease volume
 $('.happy').on('click',function() {
 	$('#wrapper1').addClass('hidden');
 	$('#main-id').removeClass('hidden');
-	$('#audio-source').attr('src', 'hap2.mp3');
+	$('#audio-source').attr('src', 'hap1.mp3');
 	starthappy();
 });
 $('.romance').on('click',function() {
 	$('#wrapper1').addClass('hidden');
 	$('#main-id').removeClass('hidden');
-	$('#audio-source').attr('src', 'love2.mp3');
+	$('#audio-source').attr('src', 'love1.mp3');
 	startromance();
 });
 $('.sad').on('click',function() {
 	$('#wrapper1').addClass('hidden');
 	$('#main-id').removeClass('hidden');
-	$('#audio-source').attr('src', 'sad4mp3');
+	$('#audio-source').attr('src', 'sad1.mp3');
 	 startsad();
 });
 $('.dissatisfied').on('click',function() {
@@ -1144,7 +1145,7 @@ $('.child').on('click',function() {
 $('.gym').on('click',function() {
 	$('#wrapper1').addClass('hidden');
 	$('#main-id').removeClass('hidden');
-	$('#audio-source').attr('src', 'gym4.mp3');
+	$('#audio-source').attr('src', 'gym1.mp3');
 	startgyms();
 });
 $('.retro').on('click',function() {
@@ -1162,7 +1163,7 @@ $('.party').on('click',function() {
 $('.opti').on('click',function() {
 	$('#wrapper1').addClass('hidden');
 	$('#main-id').removeClass('hidden');
-	$('#audio-source').attr('src', 'opti4.mp3');
+	$('#audio-source').attr('src', 'opti1.mp3');
 	startoptimistic();
 });
 function timeJump() { //take song time to -5 seconds
