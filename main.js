@@ -2,10 +2,7 @@
      var willLoop = 0;
      var willShuffle = 0;
 var name1;
-var disableLink = function(){ return false;};
-window.onclick=function(){
-	$('a').bind('click', disableLink);
-}
+
 $('#click-button').on('click', function() { //fn to hide welcome screen and show moods
         var name = $('#userName').val();
         if (name=='test@acadview.com') {
