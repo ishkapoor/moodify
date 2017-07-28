@@ -1102,19 +1102,19 @@ window.SetVolume = function(val) //fn to increase or decrease volume
 $('.happy').on('click',function() {
 	$('#wrapper1').addClass('hidden');
 	$('#main-id').removeClass('hidden');
-	$('#audio-source').attr('src', 'hap1.mp3');
+	$('#audio-source').attr('src', 'hap2.mp3');
 	starthappy();
 });
 $('.romance').on('click',function() {
 	$('#wrapper1').addClass('hidden');
 	$('#main-id').removeClass('hidden');
-	$('#audio-source').attr('src', 'love1.mp3');
+	$('#audio-source').attr('src', 'love2.mp3');
 	startromance();
 });
 $('.sad').on('click',function() {
 	$('#wrapper1').addClass('hidden');
 	$('#main-id').removeClass('hidden');
-	$('#audio-source').attr('src', 'sad1.mp3');
+	$('#audio-source').attr('src', 'sad4mp3');
 	 startsad();
 });
 $('.dissatisfied').on('click',function() {
@@ -1144,7 +1144,7 @@ $('.child').on('click',function() {
 $('.gym').on('click',function() {
 	$('#wrapper1').addClass('hidden');
 	$('#main-id').removeClass('hidden');
-	$('#audio-source').attr('src', 'gym1.mp3');
+	$('#audio-source').attr('src', 'gym4.mp3');
 	startgyms();
 });
 $('.retro').on('click',function() {
@@ -1157,12 +1157,12 @@ $('.party').on('click',function() {
 	$('#wrapper1').addClass('hidden');
 	$('#main-id').removeClass('hidden');
     $('#audio-source').attr('src', 'song1.mp3');
-	startparty();
+	startparty();0
 });
 $('.opti').on('click',function() {
 	$('#wrapper1').addClass('hidden');
 	$('#main-id').removeClass('hidden');
-	$('#audio-source').attr('src', 'opti1.mp3');
+	$('#audio-source').attr('src', 'opti4.mp3');
 	startoptimistic();
 });
 function timeJump() { //take song time to -5 seconds
